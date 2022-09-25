@@ -1,0 +1,18 @@
+img {
+  padding: 30px;
+  padding-left: 100px;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.amazonlogo {
+  padding-left: 150px;
+}
+
+.container {
+  padding: 30px;
+}
+
+.description {
+  text-align: justify;
+}
