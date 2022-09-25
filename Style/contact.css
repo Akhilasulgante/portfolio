@@ -18,3 +18,9 @@
   color: #333333;
   padding: 10px;
 }
+
+.gmaillogo {
+  max-width: 25px;
+  max-height: 20px;
+  padding-bottom: 3px;
+}
