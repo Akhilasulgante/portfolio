@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/icons.png" />
-    <title>Projects</title>
-    <!--Navivation Bar styles-->
-    <link rel="stylesheet" type="text/css" href="Style/navBarStyle.css" />
-    <!--Bootstrap Script-->
+    <title>Academics and Projects</title>
+
+    <link rel="stylesheet" type="text/css" href="Style/projects.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,10 +19,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/aa892a9d47.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -67,8 +63,251 @@
         </ul>
       </div>
     </nav>
-    <h1 class="text-info text-center">Education</h1>
+    <!--Carousel-->
+    <h1 class="text-info text-center">Academic Background</h1>
+    <section>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-text">
+                  <div class="row">
+                    <div
+                      class="col-md-2 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        class="logo-img"
+                        src="./images/neulogo.svg"
+                        alt="Northeastern logo"
+                      />
+                    </div>
+                    <div class="col-10 ml-8">
+                      <h2 class="card-title">Northeastern University</h2>
+                      <div class="row">
+                        <div class="col-sm-12 col-md-8">
+                          <h3>Master's of Science ,Computer Science</h3>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <h4>2022 - 2023(Expected)</h4>
+                        </div>
+                      </div>
+                      <p class="desc">
+                        Related Course: Algorithms, Programming design Paradigm,
+                        Natural Language Processing, Machine Learning, Web
+                        Development
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div
+                    class="col-md-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      class="logo-img"
+                      src="./images/drAIT.png"
+                      alt="Dr.AIT logo"
+                    />
+                  </div>
+                  <div class="col-10">
+                    <h2 class="card-title">
+                      Dr. Ambedkar Institute of Technology
+                    </h2>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-8">
+                        <h3>bachelor of engineering, Computer Science</h3>
+                      </div>
+                      <div class="col-sm-12 col-md-4">
+                        <h4>2013-2017</h4>
+                      </div>
+                    </div>
+                    <p class="desc">
+                      Related Course: Programming languages(C, C++, Java), Data
+                      Structures, Computer Networks, Complier Design
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class=".visually-hidden-focusable">Previous</span> -->
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+          <span class="sr-only text-dark">previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only text-dark">Next</span>
+        </button>
+      </div>
+    </section>
 
+    <!--Project cards-->
+
+    <div class="projects">
+      <h1 class="text-info text-center">Projects</h1>
+      <div class="projectCard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Avalara Coridance Project</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">
+              Algorithm course
+            </h6>
+            <p class="card-text text-dark">
+              This project is an experiential project in collaboration with the
+              Cordiance Company. The goal of this project is to get the closest
+              possible UNSPSC code match for the Avalara Tax description. To
+              begin this project, we were provided with two data files: UNSPSC
+              and Avalara.
+            </p>
+            <hr />
+            <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
+            <p class="card-text text-dark">
+              Python, String matching Algorithms
+            </p>
+            <a
+              href="https://github.com/Akhilasulgante/cordiance-experential-project"
+              class="card-link"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="projectCard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-dark">E-commerce website</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">
+              Programming Design Paradigm course
+            </h6>
+            <p class="card-text text-dark">
+              Created an e-commerce website for my soap brand
+            </p>
+            <hr />
+            <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
+            <p class="card-text text-dark">HTML, CSS, JavaScript, React</p>
+            <a
+              href="https://github.com/Akhilasulgante/Soapiphany"
+              class="card-link"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="projectCard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fund raising Site</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">
+              Programming Design Paradigm course
+            </h6>
+            <p class="card-text text-dark">
+              Created a website for social causes where user can learn about
+              them and donate for the cause
+            </p>
+            <hr />
+            <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
+            <p class="card-text text-dark">HTML, CSS, JavaScript, React</p>
+            <a
+              href="https://github.com/Akhilasulgante/ProjectBetterWorld"
+              class="card-link"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="projectCard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Pokemon database Project</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">
+              Programming Design Paradigm course
+            </h6>
+            <p class="card-text text-dark">
+              Created a project which allows user to filter pokemon database.
+              User can select two pokemon and have a battle!
+            </p>
+            <hr />
+            <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
+            <p class="card-text text-dark">HTML, CSS, JavaScript, React</p>
+            <a
+              href="https://observablehq.com/@667daa7e86be0e8e/pokemonproject"
+              class="card-link"
+              >observablehq</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="projectCard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Hate Speech Detection</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-dark">
+              Natural Language Processing course
+            </h6>
+            <p class="card-text text-dark">
+              Built an NLP model to detect hate and offesive speech
+            </p>
+            <hr />
+            <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
+            <p class="card-text text-dark">
+              Python, Tensorflow, CNN, MLP, BERT
+            </p>
+            <a
+              href="https://github.com/Akhilasulgante/hate-speech-detection-NLP-Project-"
+              class="card-link"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
