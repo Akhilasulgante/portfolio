@@ -94,8 +94,10 @@ input:checked + .slider:before {
 }
 
 .alignheader {
+  padding-top: 10px;
   text-decoration: solid;
   text-align: center;
+  padding-bottom: 10px;
 }
 .textdescs {
   font-size: large;
@@ -230,7 +232,7 @@ input:checked + .slider:before {
 #debug::after {
   content: " Show Debug";
   margin-left: 1.5em;
-  color: white;
+  color: #9a86a4;
   white-space: nowrap;
 }
 
@@ -263,7 +265,7 @@ input:checked + .slider:before {
 
 .card__content {
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  background: #f39189;
+  background: #b1bce6;
   color: rgb(10, 5, 7);
   border-radius: 1em;
   overflow: hidden;
@@ -291,6 +293,7 @@ input:checked + .slider:before {
 .card__content > figure {
   grid-area: img;
   overflow: hidden;
+  background-color: #9a86a4;
 }
 
 .card__content > figure > img {

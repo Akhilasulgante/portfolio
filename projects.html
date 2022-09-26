@@ -7,20 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/icons.png" />
     <title>Academics and Projects</title>
-
+    <!--CSS link-->
     <link rel="stylesheet" type="text/css" href="Style/projects.css" />
-
+    <!--BootStrap link-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body class="bg-light">
     <!-- Navbar -->
@@ -121,7 +116,7 @@
                 <div class="card-text">
                   <div class="row">
                     <div
-                      class="col-md-2 d-flex justify-content-center align-items-center"
+                      class="col-md-2 d-flex justify-content-center align-items-left"
                     >
                       <img
                         class="logo-img"
@@ -137,7 +132,7 @@
                           <h3>Master's of Science ,Computer Science</h3>
                         </div>
                         <div class="col-sm-12 col-md-4">
-                          <h4>Jan 2022 - Dec 2023(Expected)</h4>
+                          <h4>2022(Spring)-2023</h4>
                         </div>
                       </div>
                       <p class="desc">
@@ -194,8 +189,10 @@
         >
           <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class=".visually-hidden-focusable">Previous</span> -->
-          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
-          <span class="sr-only text-dark">previous</span>
+          <div>
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"> </span> -->
+            <img class="arrow" src="./images/prev.png" alt="left arrow" />
+          </div>
         </button>
         <button
           class="carousel-control-next"
@@ -203,8 +200,7 @@
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only text-dark">Next</span>
+          <img class="arrow" src="./images/next.png" alt="right arrow" />
         </button>
       </div>
     </section>
@@ -227,17 +223,18 @@
               </h6>
               <div class="text-dark">
                 <p class="card-text">
-                  This project is an experiential project in collaboration with
-                  the Cordiance Company. The goal of this project is to get the
+                  This project was an experiential project in collaboration with
+                  the Cordiance Company. The goal of this project was to get the
                   closest possible UNSPSC code match for the Avalara Tax
-                  description. To begin this project, we were provided with two
-                  data files: UNSPSC and Avalara.
+                  description using mostly String matching algorithm.
+                  levenshtein minimum edit distance was implemented at word
+                  level to achieve an accuracy of 84%.
                 </p>
               </div>
               <hr />
               <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
               <p class="card-text text-dark">
-                Python, String matching Algorithms
+                Python, String matching Algorithms, Data Analysis
               </p>
               <a
                 href="https://github.com/Akhilasulgante/cordiance-experential-project"
@@ -257,7 +254,12 @@
                 Programming Design Paradigm course
               </h6>
               <p class="card-text text-dark">
-                Created an e-commerce website for my soap brand
+                Deployed an e-commerce website for a soap brand. The project was
+                to demonstrate Object-Orientation programming style. The website
+                contains home, product, feedback and About pages. Cart
+                functionality was implemented. This project also includes a
+                section where the price of the soap is calculated based on user
+                input.
               </p>
               <hr />
               <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
@@ -280,12 +282,17 @@
                 Programming Design Paradigm course
               </h6>
               <p class="card-text text-dark">
-                Created a website for social causes where user can learn about
-                them and donate for the cause
+                Developed a social-cause website. The website was implemented
+                using React functional Components.The website aims to educate
+                people about the social issues and donate their contribution.
+                This website consists of Home, information and stories page.
+                Stories pages was implemented using MiniMongo.
               </p>
               <hr />
               <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
-              <p class="card-text text-dark">HTML, CSS, JavaScript, React</p>
+              <p class="card-text text-dark">
+                HTML, CSS, JavaScript, React, MiniMongo
+              </p>
               <a
                 href="https://github.com/Akhilasulgante/ProjectBetterWorld"
                 class="card-link"
@@ -304,8 +311,13 @@
                 Programming Design Paradigm course
               </h6>
               <p class="card-text text-dark">
-                Created a project which allows user to filter pokemon database.
-                User can select two pokemon and have a battle!
+                This project demostrate reactive programming using
+                <a href="https://observablehq.com/about" target="_blank"
+                  >Observablehq</a
+                >
+                platform. This project provides different filter to select
+                pokemons based many attributes. Users can select two pokemon and
+                have them fight.
               </p>
               <hr />
               <h6 class="card-subtitle mb-2 text-dark">Technology Used</h6>
@@ -313,7 +325,7 @@
               <a
                 href="https://observablehq.com/@667daa7e86be0e8e/pokemonproject"
                 class="card-link"
-                >observablehq</a
+                >Notebook</a
               >
             </div>
           </div>
@@ -331,7 +343,12 @@
               </h6>
               <div class="text-dark">
                 <p class="card-text">
-                  Built an NLP model to detect hate and offesive speech
+                  Built an NLP model with accuracy of 96% to classify text into
+                  hate and offensive speech. The model was trained using
+                  Davidson and TSA dataset. Tested different hybrid models such
+                  as Glove + Bi-LSTM + CNN + MLP and TF-IDF + MLP + SVM + XGB
+                  but achieved highest accuracy with Transformer model - CNN and
+                  MLP( Small BERT, BERT, ELECTRA, and ALBERT)
                 </p>
               </div>
               <hr />
@@ -339,7 +356,10 @@
                 <div class="text-dark">Technology Used</div>
               </h6>
               <div class="text-dark">
-                <p class="card-text">Python, Tensorflow, CNN, MLP, BERT</p>
+                <p class="card-text">
+                  Python, Tensorflow, Machine learning, Natural Language
+                  Processing
+                </p>
               </div>
               <a
                 href="https://github.com/Akhilasulgante/hate-speech-detection-NLP-Project-"

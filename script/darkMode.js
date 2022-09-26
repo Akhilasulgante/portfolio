@@ -1,5 +1,5 @@
 function switchMode(mode) {
-  let bgClasses, descClasses, navBarClasses, heading;
+  let bgClasses, descClasses, navBarClasses, heading, lineClasses;
   console.log(mode);
   if (mode === "dark") {
     bgClasses = document.getElementsByClassName("bg-light");
