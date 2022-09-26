@@ -10,6 +10,7 @@
     <title>Akhila's Webpage</title>
 
     <link rel="stylesheet" type="text/css" href="Style/main.css" />
+
     <!--Bootstrap Script-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,6 +18,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!--Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -33,7 +41,7 @@
       <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="navbar-brand">
           <a class="nav-link" aria-current="page" href="index.html"
-            ><div class="text-info">Akhila Sulgante</div></a
+            ><div class="headerlight">Akhila Sulgante</div></a
           >
         </div>
         <button
@@ -71,11 +79,6 @@
             </ul>
           </div>
           <div class="rightContainer">
-            <!-- <div class="toggle">
-              <button class="far fa-moon" onclick="updateMode()" />
-            </div> -->
-            <!-- Default checked -->
-
             <label class="switch">
               <input type="checkbox" class="sliding" onclick="updateMode()" />
               <span class="slider round"></span>
@@ -97,7 +100,7 @@
           </div>
           <div class="col-8">
             <div class="alignheader">
-              <h1 class="text-info">About me</h1>
+              <h1 class="headerlight">About me</h1>
             </div>
             <div class="text-dark">
               <p class="textdescs">
@@ -148,8 +151,16 @@
     </div>
     <!--Hobbies-->
     <div>
-      <h1 class="hobbyheader"><div class="text-info">My Hobbies</div></h1>
+      <h1 class="hobbyheader"><div class="headerlight">My Hobbies</div></h1>
     </div>
+
+    <div id="hobby"></div>
+    <script>
+      $(function () {
+        $("#hobby").load("cards.html");
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"

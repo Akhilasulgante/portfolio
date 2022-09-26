@@ -8,7 +8,12 @@
   padding-left: 20rem;
   padding-bottom: 3rem;
 }
-
+.headerlight {
+  color: #2d4263;
+}
+.headerdark {
+  color: #f47c7c;
+}
 .rightContainer {
   width: 20px;
   justify-content: left;
@@ -19,7 +24,7 @@
 }
 
 .navBarlight {
-  background-color: #fff9ca;
+  background-color: #c4d6c8;
 }
 
 .navBardark {

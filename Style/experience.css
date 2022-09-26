@@ -4,7 +4,12 @@ img {
   max-width: 400px;
   max-height: 300px;
 }
-
+.headerlight {
+  color: #2d4263;
+}
+.headerdark {
+  color: #f47c7c;
+}
 .amazonlogo {
   padding-left: 150px;
   align-items: center;
@@ -16,6 +21,8 @@ img {
 
 .description {
   text-align: justify;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .rightContainer {
@@ -28,7 +35,7 @@ img {
 }
 
 .navBarlight {
-  background-color: #fff9ca;
+  background-color: #c4d6c8;
 }
 
 .navBardark {
