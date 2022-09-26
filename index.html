@@ -29,78 +29,91 @@
     ></script>
   </head>
   <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-      <div class="navbar-brand">
-        <a class="nav-link text-info" aria-current="page" href="index.html"
-          >Akhila Sulgante</a
+    <div class="navBarlight">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="navbar-brand">
+          <a class="nav-link" aria-current="page" href="index.html"
+            ><div class="text-info">Akhila Sulgante</div></a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects&Academics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experience.html">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://raw.githubusercontent.com/Akhilasulgante/Akhilasulgante/main/AkhilaSulgante_Resume.pdf"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="leftContainer">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html"
+                  ><div class="text-dark">Academics&Projects</div></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience.html">
+                  <div class="text-dark">Experience</div></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"
+                  ><div class="text-dark">Contact</div></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://raw.githubusercontent.com/Akhilasulgante/Akhilasulgante/main/AkhilaSulgante_Resume.pdf"
+                  target="_blank"
+                  ><div class="text-dark">Resume</div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="rightContainer">
+            <!-- <div class="toggle">
+              <button class="far fa-moon" onclick="updateMode()" />
+            </div> -->
+            <!-- Default checked -->
 
-        <div class="rightContainer">
-          <div class="toggle">
-            <button
-              id="dark-mode-btn"
-              class="far fa-moon"
-              onclick="updateMode()"
-            />
+            <label class="switch">
+              <input type="checkbox" class="sliding" onclick="updateMode()" />
+              <span class="slider round"></span>
+            </label>
+            <p class="text-dark">DarkMode</p>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <img
-            src="./images/myPhoto.png"
-            alt="Akhila Sulgante Photo"
-            class="myPhoto"
-          />
-        </div>
-        <div class="col-8">
-          <div class="text-info">About me</div>
-          <div class="text-dark">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident ipsam ratione repellendus, consequuntur voluptate
-              numquam quis accusantium et, harum nesciunt nihil tenetur id
-              incidunt corrupti est? Quasi reprehenderit minus at!
-            </p>
+      </nav>
+    </div>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="./images/myPhoto.png"
+              alt="Akhila Sulgante Photo"
+              class="myPhoto"
+            />
+          </div>
+          <div class="col-8">
+            <div class="text-info">About me</div>
+            <div class="text-dark">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Provident ipsam ratione repellendus, consequuntur voluptate
+                numquam quis accusantium et, harum nesciunt nihil tenetur id
+                incidunt corrupti est? Quasi reprehenderit minus at!
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
@@ -124,7 +137,13 @@
     </script>
     <script>
       window.addEventListener("load", () => {
-        switchMode(localStorage.getItem("mode") || "light");
+        let mode = localStorage.getItem("mode");
+        switchMode(mode || "light");
+        if (mode === "dark") {
+          document.getElementsByClassName("sliding")[0].checked = true;
+        } else {
+          document.getElementsByClassName("sliding")[0].checked = false;
+        }
       });
     </script>
     <script src="./script/darkMode.js"></script>

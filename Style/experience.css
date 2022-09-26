@@ -17,3 +17,11 @@ img {
 .description {
   text-align: justify;
 }
+
+.navBarlight {
+  background-color: #93b5c6;
+}
+
+.navBardark {
+  background-color: blueviolet;
+}

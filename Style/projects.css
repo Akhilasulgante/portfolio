@@ -8,3 +8,11 @@
   padding-left: 20rem;
   padding-bottom: 3rem;
 }
+
+.navBarlight {
+  background-color: #93b5c6;
+}
+
+.navBardark {
+  background-color: blueviolet;
+}
