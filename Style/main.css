@@ -1,4 +1,5 @@
 .myPhoto {
+  padding-top: 30px;
   max-width: 500px;
   max-height: 500px;
 }
@@ -130,6 +131,8 @@ input:checked + .slider:before {
 }
 
 .github {
+  background-color: #ffff;
+  border-radius: 50%;
   color: #333333;
   padding: 10px;
 }
@@ -155,12 +158,8 @@ input:checked + .slider:before {
 }
 
 #cards {
-  padding-bottom: calc(
-    var(--numcards) * var(--card-top-offset)
-  ); /* Make place at bottom, as items will slide to that position*/
-  margin-bottom: var(
-    --card-margin
-  ); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+  margin-bottom: var(--card-margin);
 }
 
 #card_1 {
@@ -184,24 +183,16 @@ input:checked + .slider:before {
 @supports (animation-timeline: works) {
   @scroll-timeline cards-element-scrolls-in-body {
     source: selector(body);
-    scroll-offsets:
-			/* Start when the start edge touches the top of the scrollport */ selector(
-          #cards
-        )
-        start 1,
-      /* End when the start edge touches the start of the scrollport */
-        selector(#cards) start 0;
-    start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
-    end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+    scroll-offsets: selector(#cards) start 1, selector(#cards) start 0;
+    start: selector(#cards) start 1;
+    end: selector(#cards) start 0;
     time-range: 4s;
   }
 
   .card {
-    --index0: calc(var(--index) - 1); /* 0-based index */
-    --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
-    --reverse-index0: calc(
-      var(--reverse-index) - 1
-    ); /* 0-based reverse index */
+    --index0: calc(var(--index) - 1);
+    --reverse-index: calc(var(--numcards) - var(--index0));
+    --reverse-index0: calc(var(--reverse-index) - 1);
   }
 
   .card__content {
@@ -260,12 +251,14 @@ input:checked + .slider:before {
 }
 
 .card {
+  background-color: transparent;
+  border: none;
   outline: var(--outline-width) solid hotpink;
 }
 
 .card__content {
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  background: #b1bce6;
+  background: #c4d6c8;
   color: rgb(10, 5, 7);
   border-radius: 1em;
   overflow: hidden;
