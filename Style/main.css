@@ -86,3 +86,53 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.alignheader {
+  text-decoration: solid;
+  text-align: center;
+}
+.textdescs {
+  font-size: large;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.textdescs_center {
+  font-size: large;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.google {
+  color: #dd4b39;
+  padding: 10px;
+}
+
+.linkedin {
+  color: #0082ca;
+  padding: 10px;
+}
+
+.github {
+  color: #333333;
+  padding: 10px;
+}
+
+.gmaillogo {
+  max-width: 25px;
+  max-height: 20px;
+  padding-bottom: 3px;
+}
+
+.hobbyheader {
+  padding-top: 20px;
+  text-align: center;
+}

@@ -27,7 +27,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Navbar -->
     <div class="navBarlight">
       <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -48,40 +48,40 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html"
-                ><div class="text-dark">Academics&Projects</div></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="experience.html">
-                <div class="text-dark">Experience</div></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"
-                ><div class="text-dark">Contact</div></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://raw.githubusercontent.com/Akhilasulgante/Akhilasulgante/main/AkhilaSulgante_Resume.pdf"
-                target="_blank"
-                ><div class="text-dark">Resume</div></a
-              >
-            </li>
-          </ul>
+          <div class="leftContainer">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html"
+                  ><div class="text-dark">Academics&Projects</div></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience.html">
+                  <div class="text-dark">Experience</div></a
+                >
+              </li>
 
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://raw.githubusercontent.com/Akhilasulgante/Akhilasulgante/main/AkhilaSulgante_Resume.pdf"
+                  target="_blank"
+                  ><div class="text-dark">Resume</div></a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="rightContainer">
-            <div class="toggle">
-              <button
-                id="dark-mode-btn"
-                class="far fa-moon"
-                onclick="updateMode()"
-              />
-            </div>
+            <!-- <div class="toggle">
+              <button class="far fa-moon" onclick="updateMode()" />
+            </div> -->
+            <!-- Default checked -->
+
+            <label class="switch">
+              <input type="checkbox" class="sliding" onclick="updateMode()" />
+              <span class="slider round"></span>
+            </label>
+            <p class="text-dark">DarkMode</p>
           </div>
         </div>
       </nav>
@@ -93,14 +93,16 @@
         <div class="col">
           <img src="./images/neulogo.svg" alt="Northeastern Logo" />
         </div>
-        <div class="col text-dark">
-          <p class="description">
-            I am currently a Teaching Assistant for the Algorithm course(CS
-            5800) at the university. My responsibilities in this role are to
-            conduct office hours to solve students' doubts and grade papers. I
-            also help the professor in designing the course curriculum and
-            creating assignments.
-          </p>
+        <div class="col">
+          <div class="text-dark">
+            <p class="description">
+              I am currently a Teaching Assistant for the Algorithm course(CS
+              5800) at the university. My responsibilities in this role are to
+              conduct office hours to solve students' doubts and grade papers. I
+              also help the professor in designing the course curriculum and
+              creating assignments.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -108,21 +110,24 @@
       <h1 class="text-info">Account Specialist, Amazon</h1>
       <h5 class="text-info">March 2020 - Decemember 2021</h5>
       <div class="row">
-        <div class="col text-dark">
-          <p class="description">
-            I worked in the Digital Marketing domain as an Account Specialist in
-            the Ad Success Team at Amazon India. I worked alongside an Account
-            executive to provide customized recommendations and build campaigns
-            for the sellers and vendors on Amazon. I was also a quality Analyst,
-            where I reviewed recommendation reports sent by specialists to
-            clients. I was also responsible for curating and analyzing Voice of
-            Customer data for the Japanese marketplace. I designed and
-            implemented a streamlined process that helped reduce the response
-            time for a customer's query. I was also part of the Event control
-            rooms for Prime Day and Black Friday Cyber Monday sales, where I
-            provided real-time bid recommendations to the clients to increase
-            their sales during the peak hours of the event.
-          </p>
+        <div class="col">
+          <div class="text-dark">
+            <p class="description">
+              I worked in the Digital Marketing domain as an Account Specialist
+              in the Ad Success Team at Amazon India. I worked alongside an
+              Account executive to provide customized recommendations and build
+              campaigns for the sellers and vendors on Amazon. I was also a
+              quality Analyst, where I reviewed recommendation reports sent by
+              specialists to clients. I was also responsible for curating and
+              analyzing Voice of Customer data for the Japanese marketplace. I
+              designed and implemented a streamlined process that helped reduce
+              the response time for a customer's query. I was also part of the
+              Event control rooms for Prime Day and Black Friday Cyber Monday
+              sales, where I provided real-time bid recommendations to the
+              clients to increase their sales during the peak hours of the
+              event.
+            </p>
+          </div>
         </div>
 
         <div class="col">
@@ -139,22 +144,24 @@
         <div class="col">
           <img src="./images/fujitsulogo.png" alt="Fujitsu Logo" />
         </div>
-        <div class="col text-dark">
-          <p class="description">
-            My primary responsibilities in the project were to develop and
-            unit-test components in Core-java for a Japanese Client called JA
-            Kyousai and for the project called Zenkyouren. This project was
-            re-building an application developed in COBOL with Java with
-            additional enhanced features. Along with that, I also worked
-            independently on IT bug fixes at the Integration stage of the
-            project. My other responsibilities included writing Specification
-            documents in Japanese from the client's business requirement
-            documents, reviewing components developed by the team members before
-            sending them over to the Japan team, and Analyzing the team's
-            quality based on the review comments(Shiteki) received by developers
-            and coming up with a plan or a checklist to improve the quality of
-            the team.
-          </p>
+        <div class="col">
+          <div class="text-dark">
+            <p class="description">
+              My primary responsibilities in the project were to develop and
+              unit-test components in Core-java for a Japanese Client called JA
+              Kyousai and for the project called Zenkyouren. This project was
+              re-building an application developed in COBOL with Java with
+              additional enhanced features. Along with that, I also worked
+              independently on IT bug fixes at the Integration stage of the
+              project. My other responsibilities included writing Specification
+              documents in Japanese from the client's business requirement
+              documents, reviewing components developed by the team members
+              before sending them over to the Japan team, and Analyzing the
+              team's quality based on the review comments(Shiteki) received by
+              developers and coming up with a plan or a checklist to improve the
+              quality of the team.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -163,5 +170,33 @@
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function updateMode() {
+        let mode;
+        if (
+          localStorage.getItem("mode") === "light" ||
+          !localStorage.getItem("mode")
+        ) {
+          localStorage.setItem("mode", "dark");
+          mode = "dark";
+        } else {
+          localStorage.setItem("mode", "light");
+          mode = "light";
+        }
+        switchMode(mode);
+      }
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        let mode = localStorage.getItem("mode");
+        switchMode(mode || "light");
+        if (mode === "dark") {
+          document.getElementsByClassName("sliding")[0].checked = true;
+        } else {
+          document.getElementsByClassName("sliding")[0].checked = false;
+        }
+      });
+    </script>
+    <script src="./script/darkMode.js"></script>
   </body>
 </html>
