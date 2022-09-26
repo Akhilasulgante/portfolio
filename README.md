@@ -7,4 +7,4 @@ This is my personal website
 
 
 
-![homepage screenshot](./images/Screen Shot 2022-09-26 at 12.29.27.png)
+![homepage screenshot](https://raw.githubusercontent.com/Akhilasulgante/portfolio/main/images/Screen%20Shot%202022-09-26%20at%2012.29.27.png)
