@@ -19,9 +19,5 @@ Link to the portfolio is : [Akhila Sulgante Portfolio](https://akhilasulgante.gi
 Here's a glimpse of my homepage:
 ![homepage screenshot](https://raw.githubusercontent.com/Akhilasulgante/portfolio/main/images/Screen%20Shot%202022-09-26%20at%2012.29.27.png)
 
-The git also includes design document used to build this project and presentation link to the demo.
-
-Design document: yet to be updated by tomorrow 13:00
-Google slide: yet to be updated by tomorrow 13:00
-Video presentation link: yet to be updated by tomorrow 13:00
-
+Cards stacking animation:
+![Card Stacking](https://user-images.githubusercontent.com/17881473/192412017-8e01cdbd-0916-493d-80e5-e66375006555.gif)
