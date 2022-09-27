@@ -1,6 +1,9 @@
 # portfolio
 This is my personal website
 Author: Akhila Sulgante
+Design document: [Design document](https://docs.google.com/document/d/1eU0zMbG3u2snZd1m3AXbCM7XzEgzjRWAADIjK99m_Bw/edit)
+Google slide: [Demo slides](https://docs.google.com/presentation/d/1Atepzb9tplGmmeXKHO04hp2ZXl7deNKWtA28S6xWuPY/edit#slide=id.gc6f80d1ff_0_0)
+Video presentation link: [Video demo](https://www.youtube.com/watch?v=hl15IG_SQ5k&t=7s)
 
 ## Objective
 This portfolio demonstartes my professional experience and techincal skills. This project was built for CS 5610 Web development class, it uses HTML, CSS Bootstrap and JavaScript technologies.
